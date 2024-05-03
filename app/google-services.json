@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "826521863184",
+    "project_id": "babycradleapp",
+    "storage_bucket": "babycradleapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826521863184:android:4a189804a41c92046c7695",
+        "android_client_info": {
+          "package_name": "com.example.babycradleapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrRACdCtLQXZqVbBmNYJ5AdyJiTV5y2AI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
