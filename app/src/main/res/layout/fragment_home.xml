@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    android:layout_gravity="center">
 
     <!-- Baby Name Section -->
     <LinearLayout
@@ -14,8 +15,7 @@
         android:orientation="horizontal"
         android:padding="8dp"
         android:gravity="center"
-        android:background="@color/cardview_light_background"
-        >
+        android:background="@color/cardview_light_background">
 
         <TextView
             android:id="@+id/textViewBabyNameLabel"
@@ -30,68 +30,171 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Doe"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <LinearLayout
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/babyNameSection">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="390dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sleeping_baby"
+            android:scaleType="centerCrop"
+            android:scaleY="0.8"
+            app:shapeAppearanceOverlay="@style/RoundedCornerImageView"/>
+    </LinearLayout>
+
+    <!-- Statistics -->
+    <LinearLayout
+        android:id="@+id/stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/camera_view"
+        android:layout_marginTop="10dp"
+
+        android:gravity="center">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="180dp" />
     </LinearLayout>
 
     <!-- Humidity and Temperature Section -->
     <LinearLayout
-        android:layout_width="151dp"
+        android:id="@+id/params"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
-        android:layout_marginLeft="-25dp"
-        android:background="@drawable/background_shape"
         android:gravity="center"
-        android:orientation="vertical"
-        android:padding="8dp">
-        <!-- Humidity -->
+        android:layout_below="@+id/stats"
+        android:layout_marginTop="10dp">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/label_humidity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Humidity"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/value_humidity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="4dp"
-                android:text="0%"
-                android:textColor="@android:color/black"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <!-- Temperature -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:background="@drawable/background_shape"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:padding="20dp"
+            android:layout_marginEnd="10dp">
 
-            <TextView
-                android:id="@+id/label_temperature"
+            <!-- Humidity -->
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Temperature"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/value_temperature"
+                <TextView
+                    android:id="@+id/label_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/value_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:drawableStart="@drawable/ic_drop_2"
+                    android:drawablePadding="20dp"
+                    android:text="0%"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!-- Temperature -->
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="4dp"
-                android:text="0°C"
-                android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/label_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/value_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="0°C"
+                    android:drawableStart="@drawable/ic_temperature"
+                    android:drawablePadding="20dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_shape"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="10dp">
+
+            <!-- Cradle -->
+            <LinearLayout
+                android:id="@+id/cradle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_cradle"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:id="@+id/label_cradle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cradle"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/value_cradle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:drawablePadding="20dp"
+                    android:text="Paused"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

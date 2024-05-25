@@ -20,4 +20,10 @@
     <style name="Theme.BAbyCradleAPP.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.BAbyCradleAPP.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+        <!-- Style for rounded corners -->
+        <style name="RoundedCornerImageView" parent="">
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSize">20dp</item>
+        </style>
 </resources>

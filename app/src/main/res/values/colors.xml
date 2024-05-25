@@ -7,11 +7,13 @@
     <color name="green">#048A09</color>
     <color name="red">#A60E03</color>
     <color name="gray">#CCB5F4</color>
-    <color name="primary">#EB5B8C</color>
+    <color name="pink">#EB5B8C</color>
+    <color name="fushia">#E91E63</color>
     <color name="color_court">#FF9800</color>
     <color name="lavender">#8692f7</color>
     <color name="mauve_color">#884da7</color>
     <color name="blue">#1eafff</color>
+    <color name="blue_dark">#2196F3</color>
     <color name="light_violet">#E0B0FF</color>
     <color name="dark_violet">#CF9FFF</color>
     <color name="light">#B5EFD5EB</color>
