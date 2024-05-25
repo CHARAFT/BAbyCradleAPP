@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit"
+    tools:context=".ui.events.AddEventFragment">
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:layout_marginHorizontal="15dp"
+        android:hint="Enter Title"
+        android:padding="16dp"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edit_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Enter Description"
+        android:inputType="textMultiLine"
+        android:layout_marginHorizontal="15dp"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:layout_marginHorizontal="15dp"
+        android:padding="16dp"
+        android:hint="Enter date"
+        android:inputType="text"
+
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="428dp"
+        android:text="Save"
+        android:layout_marginHorizontal="15dp"
+
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/show_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="Show All"
+        android:layout_marginHorizontal="15dp"
+
+        tools:layout_editor_absoluteX="-16dp" />
+</FrameLayout>

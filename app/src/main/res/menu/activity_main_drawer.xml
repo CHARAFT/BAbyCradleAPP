@@ -20,6 +20,11 @@
             tools:ignore="HardcodedText" />
 
         <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_events"
+            android:title="Event"
+            tools:ignore="HardcodedText" />
+        <item
             android:id="@+id/articles"
             android:icon="@drawable/ic_article"
             android:title="Articles"
