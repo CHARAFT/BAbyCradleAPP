@@ -16,7 +16,6 @@
         android:name="com.example.babycradleapp.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
-
     <fragment
         android:id="@+id/nav_event"
         android:name="com.example.babycradleapp.ui.events.EventFragment"
@@ -32,5 +31,10 @@
         android:name="com.example.babycradleapp.ui.events.AddEventFragment"
         android:label="Add Event"
         tools:layout="@layout/fragment_add_event" />
+    <fragment
+        android:id="@+id/articles"
+        android:name="com.example.babycradleapp.articleFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_article" />
 
 </navigation>

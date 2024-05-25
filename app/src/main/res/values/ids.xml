@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="name" type="id" />
+    <item name="lastName" type="id" />
+    <item name="tel" type="id" />
+    <item name="btn_register" type="id" />
+    <item name="loginNow" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="menu_item1" type="id" />
+</resources>
