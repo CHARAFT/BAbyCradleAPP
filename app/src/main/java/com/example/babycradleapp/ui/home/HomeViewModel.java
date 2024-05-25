@@ -41,6 +41,7 @@ public class HomeViewModel extends ViewModel {
         return temperatureEntries;
     }
 
+
     private void fetchData() {
         DatabaseReference humiditeRef = databaseReference.child("Humidite");
         DatabaseReference temperatureRef = databaseReference.child("Temperature");
