@@ -13,11 +13,6 @@
             android:icon="@drawable/ic_statistics"
             android:title="Statistics"
             tools:ignore="HardcodedText"/>
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_events"
-            android:title="Events"
-            tools:ignore="HardcodedText" />
 
         <item
             android:id="@+id/nav_event"
